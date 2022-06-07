@@ -1,7 +1,7 @@
 import express, { Request, Response } from "express";
 import { insertProfession } from "../service/professionService";
 
-import { body, validationResult } from "express-validator";
+import { body, validationResult} from 'express-validator'
 
 export const profession = express.Router()
 

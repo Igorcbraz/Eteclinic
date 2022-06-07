@@ -1,4 +1,4 @@
-function generatedPassword(){
+export function generatedPassword(){
   const blockedLetters   = ['a', 'c', 'e', 'g', 'i', 'k', 'n', 'p', 'r', 't', 'x'];
   const whiteList        = ['!', '@', '#', '$', '%', '&', '*', '?', '/', '_', '-'];
 
@@ -9,9 +9,9 @@ function generatedPassword(){
       const letter = key[key.search(blockLetter)];
       key = key.replace(letter, whiteList[index]);
 
-      return key
+      return key.trim()
     } else {
-      return key
+      return key.trim()
     }
   });
 
